@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; 
@@ -36,6 +37,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 25px;
 }
 
 section {
@@ -76,4 +78,12 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+address{
+    font-style: normal;
+}
+div{
+    list-style-type: disc;
+    margin-left: 20px;
 }
