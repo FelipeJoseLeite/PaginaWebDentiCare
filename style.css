@@ -33,7 +33,7 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a {
+nav ul a {
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -86,4 +86,20 @@ address{
 div{
     list-style-type: disc;
     margin-left: 20px;
+}
+/* Estilos para os botões personalizados */
+.meuBotao {
+    background-color: #009688;
+    border: none;
+    width: 220px;
+    height: 50px;
+    font-size: 25px;
+}
+.meuBotao:hover {
+    background-color: #009688; /* Defina a cor de fundo desejada para o hover aqui */
+    color: white;
+}
+.meuBotao a:hover {
+    text-decoration: none; /* Remove sublinhado */
+    cursor: pointer; /* Altera o cursor para a mão ao passar o mouse */
 }

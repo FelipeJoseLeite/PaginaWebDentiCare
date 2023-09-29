@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DentiCare</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -14,10 +15,11 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#servicos">Nossos Serviços</a></li>
-                <li><a href="#vantagens">Nossas Vantagens</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <button id="botao1" class="btn btn-primary meuBotao meuBotaoSobre"><a href="#sobre">Sobre Nós</a></button>
+                <button id="botao2" class="btn btn-primary meuBotao meuBotaoServicos"><a href="#servicos">Nossos Serviços</a></button>
+                <button id="botao3" class="btn btn-primary meuBotao meuBotaoVantagens"><a href="#vantagens">Nossas Vantagens</a></button>
+                <button id="botao4" class="btn btn-primary meuBotao meuBotaoContato"><a href="#contato">Contato</a></button>
+
             </ul>
         </nav>
     </header>
@@ -43,6 +45,7 @@
     <section id="servicos">
         <h2>Nossos Serviços</h2>
         <ul>
+            
             <li>
                 <h3>Armazenamento de Informações de Cadastro</h3>
                 <p>Nossa clínica oferece um sistema seguro e confiável de armazenamento de informações de cadastro dos pacientes. Garantimos a proteção e privacidade de seus dados pessoais, mantendo um registro preciso e seguro de suas informações.</p>
@@ -100,5 +103,41 @@
     <footer>
         <p>&copy; 2023 DentiCare. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const botao1 = document.getElementById('botao1');
+        const botao2 = document.getElementById('botao2');
+        const botao3 = document.getElementById('botao3');
+        const botao4 = document.getElementById('botao4');
+        const sobre = document.getElementById('sobre');
+        const servicos = document.getElementById('servicos');
+        const vantagens = document.getElementById('vantagens');
+        const contato = document.getElementById('contato');
+
+        function scrollSmoothly(element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        botao1.addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollSmoothly(sobre);
+        });
+
+        botao2.addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollSmoothly(servicos);
+        });
+
+        botao3.addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollSmoothly(vantagens);
+        });
+
+        botao4.addEventListener('click', function(event) {
+            event.preventDefault();
+            scrollSmoothly(contato);
+        });
+    </script>
+
 </body>
 </html>
