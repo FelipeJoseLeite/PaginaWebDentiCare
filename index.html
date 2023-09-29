@@ -6,41 +6,34 @@
     <title>DentiCare</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+      defer
+    ></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="titulo.png" width="50"/>
-            <h1>DentiCare</h1>
+            <img class="logo-img" src="titulo.png" width="60"/>
+            <h1 class="title">DentiCare</h1>
         </div>
         <nav>
             <ul>
-                <button id="botao1" class="btn btn-primary meuBotao meuBotaoSobre"><a href="#sobre">Sobre Nós</a></button>
                 <button id="botao2" class="btn btn-primary meuBotao meuBotaoServicos"><a href="#servicos">Nossos Serviços</a></button>
                 <button id="botao3" class="btn btn-primary meuBotao meuBotaoVantagens"><a href="#vantagens">Nossas Vantagens</a></button>
-                <button id="botao4" class="btn btn-primary meuBotao meuBotaoContato"><a href="#contato">Contato</a></button>
-
+                <button id="botao1" class="btn btn-primary meuBotao meuBotaoSobre"><a href="#sobre">Sobre Nós</a></button>
             </ul>
         </nav>
     </header>
-
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <ul>
-            <li>
-                <h3>Nossa Empresa</h3>
-                <p>Nós somos uma empresa inovadora dedicada a fornecer soluções de software avançadas para clínicas odontológicas em todo o mundo.</p>
-            </li>
-            <li>
-                <h3>Nossa Missão</h3>
-                <p>Nossa missão é revolucionar a gestão e a eficiência das clínicas dentárias, oferecendo um aplicativo de ponta que simplifica agendamentos, registros de pacientes e muito mais. Estamos comprometidos em facilitar a vida dos profissionais de odontologia e melhorar o atendimento aos pacientes.</p>
-            </li>
-            <li>
-                <h3>Nossa Equipe</h3>
-                <p>Nossa equipe é formada por especialistas em tecnologia e saúde bucal que trabalham incansavelmente para desenvolver e aprimorar nosso aplicativo. Estamos comprometidos em oferecer suporte excepcional aos nossos clientes e garantir que eles obtenham o máximo valor de nossa plataforma.</p>
-            </li>
-        </ul>
-    </section>
+    
 
     <section id="servicos">
         <h2>Nossos Serviços</h2>
@@ -87,18 +80,114 @@
         </ul>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <ul>
-            <p>Entre em contato conosco para obter mais informações sobre nosso App</p>
-            <address>
+    <h2 id="sobre" class="text-center">Sobre Nós</h2>
+      <div class="container">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <h4>Nossa Empresa</h4>
+              </button>
+            </h3>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Nós somos uma empresa inovadora dedicada a fornecer soluções de software avançadas para 
+                clínicas odontológicas em todo o mundo.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <h4>Nossa Missão</h4>
+              </button>
+            </h3>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Nossa missão é revolucionar a gestão e a eficiência das clínicas dentárias, oferecendo um 
+                aplicativo de ponta que simplifica agendamentos, registros de pacientes e muito mais. 
+                Estamos comprometidos em facilitar a vida dos profissionais de odontologia e melhorar 
+                o atendimento aos pacientes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <h4>Nossa Equipe</h4>
+              </button>
+            </h3>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Nossa equipe é formada por especialistas em tecnologia e saúde bucal que trabalham 
+                incansavelmente para desenvolver e aprimorar nosso aplicativo. Estamos comprometidos 
+                em oferecer suporte excepcional aos nossos clientes e garantir que eles obtenham o 
+                máximo valor de nossa plataforma.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <h4>Nossos Contatos</h4>
+              </button>
+            </h3>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <p>Entre em contato conosco para obter mais informações sobre nosso App</p>
                 <p>Endereço: Rua das Picinas, 123, Toledo-PR</p>
                 <p>Telefone Fixo: (45) 3252-7890</p>
                 <p>Telefone WhatsApp: (45) 99947-6969</p>
                 <p>Email: infovendas@appdenticare.com.br</p>
-            </address>
-        </ul>
-    </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer>
         <p>&copy; 2023 DentiCare. Todos os direitos reservados.</p>
@@ -108,11 +197,9 @@
         const botao1 = document.getElementById('botao1');
         const botao2 = document.getElementById('botao2');
         const botao3 = document.getElementById('botao3');
-        const botao4 = document.getElementById('botao4');
         const sobre = document.getElementById('sobre');
         const servicos = document.getElementById('servicos');
         const vantagens = document.getElementById('vantagens');
-        const contato = document.getElementById('contato');
 
         function scrollSmoothly(element) {
             element.scrollIntoView({ behavior: 'smooth' });
@@ -132,12 +219,27 @@
             event.preventDefault();
             scrollSmoothly(vantagens);
         });
-
-        botao4.addEventListener('click', function(event) {
-            event.preventDefault();
-            scrollSmoothly(contato);
-        });
     </script>
-
+    <style>
+        .meuBotao {
+            border: none;
+            background-color: transparent; 
+            color: #000; 
+            text-decoration: none;
+            cursor: pointer;
+            padding: 0;
+            width: 220px;
+            height: 50px;
+            font-size: 25px; 
+        }
+        .meuBotao:hover {
+            background-color: #009688;
+            color: white;
+        }
+        .meuBotao a:hover {
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </body>
 </html>

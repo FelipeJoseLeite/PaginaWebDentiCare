@@ -6,6 +6,18 @@ body {
     background-color: #f4f4f4; 
 }
 
+.logo {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    height: 20vh; /* 100% da altura da viewport */
+}
+
+.logo-img {
+    float: left;
+    margin-right: 20px;
+}
+
 header {
     background-color: #009688; 
     color: white;
@@ -18,7 +30,7 @@ header img {
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin-top: 10px;
 }
 
@@ -62,6 +74,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: 30px;
 }
 
 footer a {
@@ -87,19 +100,10 @@ div{
     list-style-type: disc;
     margin-left: 20px;
 }
-/* Estilos para os botões personalizados */
-.meuBotao {
-    background-color: #009688;
-    border: none;
-    width: 220px;
-    height: 50px;
-    font-size: 25px;
+body h2{
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
-.meuBotao:hover {
-    background-color: #009688; /* Defina a cor de fundo desejada para o hover aqui */
-    color: white;
-}
-.meuBotao a:hover {
-    text-decoration: none; /* Remove sublinhado */
-    cursor: pointer; /* Altera o cursor para a mão ao passar o mouse */
+body section h2{
+    margin-top: 0px;
 }
